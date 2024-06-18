@@ -34,7 +34,8 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="cursor-pointer hidden md:flex space-x-10 items-center
-             text-slate-300 text-center bg-clip-text text-transparent bg-gradient-to-b
+             text-slate-300 text-center 
+             bg-clip-text text-transparent bg-gradient-to-b
               from-neutral-50 to bg-neutral-500 bg-opacity-50">
                 <div className="hover:text-gray-50">Website Development</div>
                 <div className="hover:text-gray-50">Graphic Design</div>
