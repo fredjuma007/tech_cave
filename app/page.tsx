@@ -2,10 +2,12 @@ import Navbar from "@/components/navbar";
 import SliderOne from "@/components/ui/slider";
 import { Spotlight } from "@/components/ui/spotlight";
 import Link from "next/link";
+
 import WebsiteDesign from "./website-design";
 import GrapicDesign from "./grapic-design";
 import WordpressWeb from "./wordpress-web";
 import Brands from "./brands";
+import Services from "./services";
 
 export default function Home() {
   return (
@@ -39,6 +41,7 @@ export default function Home() {
           <GrapicDesign />
           <WordpressWeb />
           <Brands />
+          <Services />
 
         </div>
 
