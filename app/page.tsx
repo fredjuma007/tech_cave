@@ -8,6 +8,7 @@ import GrapicDesign from "./grapic-design";
 import WordpressWeb from "./wordpress-web";
 import Brands from "./brands";
 import Services from "./services";
+import FAQS from "./faq";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
           <WordpressWeb />
           <Brands />
           <Services />
+          <FAQS />
 
         </div>
 
