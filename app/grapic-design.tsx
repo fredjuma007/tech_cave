@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ThreeDCardExample } from "./snippets/3d-card-snippet";
 import { EvervaultCardSnippet } from "./snippets/evervault-card-snippet";
 
-const GrapicDesign = () => {
+const GraphicDesign = () => {
     return ( 
     <div>
           <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-32 px-2">
@@ -39,4 +39,4 @@ const GrapicDesign = () => {
     );
 }
  
-export default GrapicDesign;
+export default GraphicDesign;

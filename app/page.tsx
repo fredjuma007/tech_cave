@@ -1,19 +1,53 @@
+"use client"
+
 import Navbar from "@/components/navbar";
 import SliderOne from "@/components/ui/slider";
 import { Spotlight } from "@/components/ui/spotlight";
 import Link from "next/link";
 
 import WebsiteDesign from "./website-design";
-import GrapicDesign from "./grapic-design";
+import GraphicDesign from "./grapic-design";
 import WordpressWeb from "./wordpress-web";
 import Brands from "./brands";
 import Services from "./services";
 import FAQS from "./faq";
+import { useRef } from "react";
 
 export default function Home() {
+
+  const websiteDesignRef = useRef<HTMLDivElement>(null);
+  const grapicDesignRef = useRef<HTMLDivElement>(null);
+  const wordpressWebRef = useRef<HTMLDivElement>(null);
+  const brandsRef = useRef<HTMLDivElement>(null);
+
+  const scrollToWebsiteDesign = () => {
+    websiteDesignRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
+
+  const scrollToGraphicDesign = () => {
+    grapicDesignRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToWordpressWeb = () => {
+    wordpressWebRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToBrands = () => {
+    brandsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
-      <Navbar />
+      <Navbar
+      scrollToWebsiteDesign={scrollToWebsiteDesign}
+      scrollToGraphicDesign={scrollToGraphicDesign}
+      scrollToWordpressWeb={scrollToWordpressWeb}
+      scrollToBrands={scrollToBrands}
+       />
       <Spotlight
       className="hidden md:flex left-80"
       fill="white"
@@ -38,16 +72,26 @@ export default function Home() {
 
         <div className="w-full pt-20">
           <SliderOne />
+          </div>
+
+        <div ref={websiteDesignRef}>
           <WebsiteDesign />
-          <GrapicDesign />
-          <WordpressWeb />
+        </div>
+        <div ref={grapicDesignRef}>
+          <GraphicDesign />
+        </div>
+        <div ref={wordpressWebRef}>
+          < WordpressWeb/>
+        </div>
+        <div ref={brandsRef}>
           <Brands />
+        </div>
+
           <Services />
           <FAQS />
 
         </div>
 
       </div>
-    </div>
   );
 }
