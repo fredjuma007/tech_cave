@@ -147,7 +147,7 @@ export default function ContactForm() {
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
                 One flexible agency for your entire company to share knowledge,
-                ship projects, and collaborate.
+                ship projects, and collaborate
               </div>
             </div>
 
