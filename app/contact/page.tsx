@@ -170,15 +170,10 @@ export default function ContactForm() {
           {!submitted ? (
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className="
-            space-y-4
+              className="space-y-4
             h-full
             border rounded-3xl p-10
-            md:w-1/3
-            
-            
-                     
-                        "
+            md:w-1/3"
             >
               <div className="md:flex items-center gap-6 ">
                 <FormField
@@ -339,8 +334,8 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                  I agree to Bird&apos; sending marketing communications related
-                  to bird
+                  I agree to TechCave&apos; sending marketing communications related
+                  to TechCave
                 </div>
               </div>
 
