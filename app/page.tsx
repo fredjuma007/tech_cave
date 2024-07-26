@@ -70,23 +70,10 @@ export default function Home() {
           Schedule a Call
         </Link>
 
-        <div className="w-full pt-20">
-          <SliderOne />
-          </div>
-
-        <div ref={websiteDesignRef}>
-          <WebsiteDesign />
-        </div>
-        <div ref={grapicDesignRef}>
+          <WebsiteDesign />      
           <GraphicDesign />
-        </div>
-        <div ref={wordpressWebRef}>
           < WordpressWeb/>
-        </div>
-        <div ref={brandsRef}>
           <Brands />
-        </div>
-
           <Services />
           <FAQS />
 

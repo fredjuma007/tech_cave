@@ -49,10 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({
              text-slate-300 text-center 
              bg-clip-text text-transparent bg-gradient-to-b
               from-neutral-50 to bg-neutral-500 bg-opacity-50">
-                <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">Website Development</div>
-                <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">Graphic Design</div>
-                <div onClick={scrollToWordpressWeb} className="hover:text-gray-50">WordPress WebDesign</div>
-                <div onClick={scrollToBrands} className="hover:text-gray-50">Brands</div>
+        
 
                 <Link href="/pricing" className="hover:text-gray-50">
                     Pricing
