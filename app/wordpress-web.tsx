@@ -4,19 +4,19 @@ import Image from "next/image";
 
 const stores = [
     {
-      image: "/images/image2.png",
+      image: "/images/fulllogo.jpg",
       quote: "TechCave showed us to get started, what to do, and how to do it.",
       name: "Jason Scer",
     },
     {
-      image: "/images/shop-2.jpeg",
+      image: "/images/greenceo_logo.jpg",
       quote:
         "We had no idea how to get started, but TechCave showed us the way. And we were able to create something amazing.",
       name: "John Prency",
     },
   
     {
-      image: "/images/s-2.webp",
+      image: "/images/kipekee.jpg",
       quote:
         "The team at TechCave is amazing. They helped us create a stunning store that we are proud of.",
       name: "Miguel Martinez",
@@ -33,11 +33,11 @@ const WordpressWeb = () => {
         >
           <div className=" p-4   mx-auto relative z-10  w-full ">
             <div className="text-4xl py-10 md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 bg-opacity-50">
-              WordPress Websites <br />
+              Logo designs <br /> that stand out
             </div>
     
             <p className="mt-4 text-lg font-normal  text-neutral-800 max-w-lg text-center mx-auto">
-              We create stunning WordPress websites that are easy to manage. We help you get started, and we show you how to grow your business.
+              We create stunning logos that help you stand out. From logos to social media posts, we have you covered.
             </p>
             <div className="md:flex items-center justify-center  px-10 ">
               {stores.map((store, index) => (
