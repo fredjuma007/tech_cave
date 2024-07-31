@@ -291,9 +291,6 @@ export default function ContactForm() {
                       </FormControl>
                       <SelectContent>
                         <div className="flex gap-4">
-                          <SelectItem value="Evaluate Bird for my company">
-                            Evaluate Bird for my company
-                          </SelectItem>
                         </div>
                         <SelectItem value="Learn More">Learn More</SelectItem>
                         <SelectItem value="Get a Quote">Get a Quote</SelectItem>
