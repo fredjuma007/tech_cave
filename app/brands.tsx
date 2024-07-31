@@ -11,13 +11,13 @@ const font = Lora({
 
 const logos = [
   {
-    image: "/logo/logoipsum-248.svg",
+    image: "/logo/print.svg",
   },
   {
-    image: "/logo/logoipsum-245.svg",
+    image: "/logo/kipekee.svg",
   },
   {
-    image: "/logo/logoipsum-225.svg",
+    image: "/logo/greenceo.svg",
   },
 
 ];
@@ -57,8 +57,7 @@ const Brands = () => {
                 font.className
               )}
             >
-              &quot;We got rid of nearly a dozen different tools because of what
-              TechCave does for us.&quot;
+              &quot; Have your brand included in the list of successful brands &quot;
             </div>
     
             <div className="items-center flex justify-center flex-col text-white">
@@ -70,10 +69,7 @@ const Brands = () => {
                 className="pt-2 xl:pt-0  w-10 xl:w-14 "
               />
     
-              <div className=" text-center">
-                <div className="text-sm  font-medium pt-4">Carlos Hernandez</div>
-                <div className="text-sm">Marketing Director, Lorem Ipsum Software</div>
-              </div>
+              <p className="text-lg font-bold">TechCave</p>
             </div>
           </div>
         </div>

@@ -5,21 +5,21 @@ import Image from "next/image";
 const stores = [
     {
       image: "/images/fulllogo.jpg",
-      quote: "TechCave showed us to get started, what to do, and how to do it.",
-      name: "Jason Scer",
+      quote: "TechCave showed us to get started with a logo, what to do, and how to do it.",
+      name: "Sparkle BookClub",
     },
     {
       image: "/images/greenceo_logo.jpg",
       quote:
         "We had no idea how to get started, but TechCave showed us the way. And we were able to create something amazing.",
-      name: "John Prency",
+      name: "GreenCEO",
     },
   
     {
       image: "/images/kipekee.jpg",
       quote:
-        "The team at TechCave is amazing. They helped us create a stunning store that we are proud of.",
-      name: "Miguel Martinez",
+        "The team at TechCave is amazing. They helped us create a stunning Logo that we are proud of.",
+      name: "Kipekee",
     },
   ];
 
