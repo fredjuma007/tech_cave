@@ -123,42 +123,38 @@ export default function ContactForm() {
   return (
     <div className=" w-full   md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden ">
       <Navbar
-        scrollToWebsiteDesign={() => {}}
-        scrollToGraphicDesign={() => {}}
-        scrollToWordpressWeb={() => {}}
-        scrollToBrands={() => {}}
+        scrollToWebsiteDesign={() => { }}
+        scrollToGraphicDesign={() => { }}
+        scrollToWordpressWeb={() => { }}
+        scrollToBrands={() => { }}
       />
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">
           <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            Feel free to reach out
+            Feel free to reach out 
           </div>
           <div
-            className="
-              
-              py-4
-              text-gray-300
-                    "
+            className="py-4 text-gray-300"
           >
             Let&apos;s talk about how TechCave can help your brand work better.
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
             <div className="flex gap-4 border-b ">
-              <div className=" font-normal pb-4 ">
-                One flexible agency for your entire company to share knowledge,
-                ship projects, and collaborate
+              <div className="font-normal pb-4 ">
+                Software Developers for your entire company to share knowledge,
+                ship projects, and collaborate.
               </div>
             </div>
 
             <div className="flex gap-4 border-b ">
-              <div className=" font-normal pb-4 ">
+              <div className="font-normal pb-4 ">
                 Quality features to securely manage user access and security.
               </div>
             </div>
 
             <div className="flex gap-4  ">
-              <div className=" font-normal pb-4 ">
+              <div className="font-normal pb-4 ">
                 Dedicated support to work with you on your setup and help you
                 build the best plan for your company.
               </div>
@@ -170,10 +166,7 @@ export default function ContactForm() {
           {!submitted ? (
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className="space-y-4
-            h-full
-            border rounded-3xl p-10
-            md:w-1/3"
+              className="space-y-4 h-full border rounded-3xl p-10 md:w-1/3"
             >
               <div className="md:flex items-center gap-6 ">
                 <FormField
@@ -185,7 +178,7 @@ export default function ContactForm() {
                         First name *
                       </FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input {...field} required />
                       </FormControl>
                     </FormItem>
                   )}
@@ -200,7 +193,7 @@ export default function ContactForm() {
                         Last name *
                       </FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input {...field} required />
                       </FormControl>
                     </FormItem>
                   )}
@@ -216,7 +209,7 @@ export default function ContactForm() {
                       Email *
                     </FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input {...field} required />
                     </FormControl>
                   </FormItem>
                 )}
@@ -239,79 +232,14 @@ export default function ContactForm() {
 
               <FormField
                 control={form.control}
-                name="services"
-                render={({ field }) => (
-                  <FormItem className="items-center justify-center w-full">
-                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                    Services you are interested in
-                    </FormLabel>
-                    <Select
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select an option" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <div className="flex gap-4">
-                          <SelectItem value="Website Develoment">
-                          Website Develoment
-                          </SelectItem>
-                        </div>
-                        <SelectItem value="Logo Design">Logo Design</SelectItem>
-                        <SelectItem value="Custom Wordpress Blogsite">Custom Wordpress Blogsite</SelectItem>
-
-                      </SelectContent>
-                    </Select>
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="help"
-                render={({ field }) => (
-                  <FormItem className="items-center justify-center  w-full">
-                    <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      How can we help ?
-                    </FormLabel>
-                    <Select
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger
-                        
-                        
-                        >
-                          <SelectValue placeholder="Select an option" />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent>
-                        <div className="flex gap-4">
-                        </div>
-                        <SelectItem value="Learn More">Learn More</SelectItem>
-                        <SelectItem value="Get a Quote">Get a Quote</SelectItem>
-
-                        <SelectItem value="Other">Other</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
                 name="info"
                 render={({ field }) => (
                   <FormItem className="items-center justify-center w-full">
                     <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      Anything else ?
+                      Give us some info about your project (or request a quote)*
                     </FormLabel>
                     <FormControl>
-                      <Textarea style={{ height: "100px" }} {...field} />
+                      <Textarea style={{ height: "100px" }} {...field} required />
                     </FormControl>
                   </FormItem>
                 )}
@@ -320,13 +248,7 @@ export default function ContactForm() {
               <div className="flex gap-4 items-center">
                 <div>
                   <Checkbox
-                    className="
-                outline
-                border-2
-                text-sm
-                font-light
-                bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400
-                "
+                    className="outline border-2 text-sm font-light bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
                   />
                 </div>
                 <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
@@ -338,11 +260,7 @@ export default function ContactForm() {
               <div className="flex items-center gap-4">
                 <Button
                   type="submit"
-                  className="
-                            text-sm
-                            font-light
-                        
-                            "
+                  className="text-sm font-light"
                   disabled={loading}
                   onClick={() => form.handleSubmit(onSubmit)}
                 >
@@ -353,24 +271,14 @@ export default function ContactForm() {
           ) : (
             <>
               <div
-                className="
-        text-xl 
-        
-        md:text-2xl 
-        flex 
-        items-center
-        justify-center
-        flex-col
-        px-8
-
-        "
+                className="text-xl md:text-2xl flex items-center justify-center flex-col px-8"
               >
                 <div className="w-80 py-20">
                   <PiSmiley className="text-6xl text-[#6c6684] mx-auto" />
 
                   <div className="text-gray-500 font-light  text-center justify-center mx-auto py-10">
                     We&apos;ve received your inquiry and will be contacting you
-                    via email. Thank you for reaching out to us.
+                    via email soon. Thank you for reaching out to us.
                   </div>
                 </div>
               </div>
