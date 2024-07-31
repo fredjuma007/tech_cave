@@ -22,7 +22,7 @@ import {
     <AccordionItem value="item-1">
       <AccordionTrigger>What is TechCave?</AccordionTrigger>
       <AccordionContent>
-        Bird is a full fledge marketing agency that specializes in branding, web design, and digital marketing.
+        TechCave is a software development company that offers custom tailored solutions for your business.
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-2">
@@ -37,7 +37,6 @@ import {
       </AccordionTrigger>
       <AccordionContent>
         We offer custom tailored solutions for your business. Contact us to get a quote.
-        
       </AccordionContent>
     </AccordionItem>
   

@@ -19,7 +19,8 @@ const plans = [
       "Design + Development",
 
       "Private communication channel",
-      "1-3 days turnaround time",
+
+      "1-2 weeks turnaround time",
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
@@ -37,7 +38,8 @@ const plans = [
       "Design + Development",
       "24-hour support response time",
       "Private communication channel",
-      "3-5 days turnaround time",
+      "ecormmerce integration",
+      "2-4 weeks turnaround time",
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
@@ -57,8 +59,8 @@ const plans = [
       "Unlimited Revisions",
       "24-hour support response time",
       "Private communication channel",
+      "ecormmerce integration",
       "Priority Development Queue",
-      "Dedicated Project Manager",
     ],
     style:
       " h-full rounded-3xl py-10 flex flex-col  bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50  ",
